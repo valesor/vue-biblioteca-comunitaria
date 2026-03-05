@@ -27,13 +27,21 @@
         ¿Querés participar o donar libros?
       </h3>
 
-      <p class="lead text-muted text-center mb-4 px-3 px-md-5">
-        La Biblioteca Comunitaria es un proyecto colaborativo que crece gracias
-        al compromiso de vecinos y lectores. Si querés donar libros, participar
-        en actividades o sumarte como voluntario, completá el formulario o
-        escribinos. ¡Tu aporte ayuda a fortalecer el acceso a la lectura en
-        nuestra comunidad!
-      </p>
+   <p class="lead text-muted text-center mb-4 px-3 px-md-5">
+  La Biblioteca Comunitaria es un proyecto colaborativo que crece gracias
+  al compromiso de vecinos y lectores. Si querés donar libros, participar
+  en actividades o sumarte como voluntario, completá el formulario o
+  escribinos. ¡Tu aporte ayuda a fortalecer el acceso a la lectura en
+  nuestra comunidad!
+</p>
+
+<p class="text-muted text-center mb-5 px-3 px-md-5">
+  Creemos que los libros pueden conectar a las personas, generar espacios
+  de encuentro y promover el aprendizaje compartido. Cada libro donado,
+  cada actividad organizada y cada persona que se suma aporta a construir
+  una comunidad más participativa y con mayores oportunidades de acceso a
+  la cultura y al conocimiento.
+</p>
 
       <a
         :href="gmailLink"
@@ -91,3 +99,4 @@ export default {
   },
 };
 </script>
+
