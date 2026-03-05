@@ -23,6 +23,7 @@
     <!-- Ejemplo de v-if / v-else -->
     <div class="text-center mt-4">
       <p v-if="actividades.length === 0">No hay actividades programadas.</p>
+
       <div v-else class="text-center mt-4">
         <span class="badge bg-primary fs-6 px-4 py-2 shadow-sm">
           Total de actividades: {{ actividades.length }}
@@ -33,6 +34,12 @@
 </template>
 
 <script>
+
+// IMPORTAMOS LAS IMÁGENES
+import talleres from '../assets/img/card-talleres.jpg'
+import charlas from '../assets/img/card-charlas.jpg'
+import libros from '../assets/img/card-libros.jpg'
+
 export default {
   name: 'Actividades',
 
@@ -43,22 +50,22 @@ export default {
           id: 1,
           titulo: 'Talleres de Lectura',
           descripcion: 'Participa de nuestros talleres semanales.',
-          imagen: '/src/assets/img/card-talleres.jpg',
+          imagen: talleres
         },
         {
           id: 2,
           titulo: 'Charlas y Encuentros',
           descripcion: 'Asiste a nuestras charlas literarias.',
-          imagen: '/src/assets/img/card-charlas.jpg',
+          imagen: charlas
         },
         {
           id: 3,
           titulo: 'Club de Libros',
           descripcion: 'Únete a nuestro club de lectura.',
-          imagen: '/src/assets/img/card-libros.jpg',
-        },
-      ],
+          imagen: libros
+        }
+      ]
     };
-  },
+  }
 };
 </script>
