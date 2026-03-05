@@ -5,7 +5,7 @@
       :class="libro.disponible ? 'border-success' : 'border-danger'"
     >
       <img
-        :src="libro.portada || '/src/assets/img/portada-default.jpg'"
+        :src="libro.portada || portadaDefault"
         class="card-img-top"
       />
 
@@ -42,8 +42,16 @@
 </template>
 
 <script>
+
+import portadaDefault from '../assets/img/portada-default.jpg'
+
 export default {
   name: 'LibroCard',
   props: ['libro'],
+  data() {
+    return {
+      portadaDefault
+    }
+  }
 };
 </script>
