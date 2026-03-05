@@ -43,29 +43,52 @@ import libros from '../assets/img/card-libros.jpg'
 export default {
   name: 'Actividades',
 
-  data() {
-    return {
-      actividades: [
-        {
-          id: 1,
-          titulo: 'Talleres de Lectura',
-          descripcion: 'Participa de nuestros talleres semanales.',
-          imagen: talleres
-        },
-        {
-          id: 2,
-          titulo: 'Charlas y Encuentros',
-          descripcion: 'Asiste a nuestras charlas literarias.',
-          imagen: charlas
-        },
-        {
-          id: 3,
-          titulo: 'Club de Libros',
-          descripcion: 'Únete a nuestro club de lectura.',
-          imagen: libros
-        }
-      ]
-    };
-  }
+data() {
+  return {
+    actividades: [
+      {
+        id: 1,
+        titulo: 'Talleres de Lectura',
+        descripcion: 'Participa de nuestros talleres semanales donde compartimos lecturas y reflexiones en grupo.',
+        imagen: talleres
+      },
+      {
+        id: 2,
+        titulo: 'Charlas y Encuentros',
+        descripcion: 'Espacios de conversación con lectores y autores para intercambiar ideas sobre literatura.',
+        imagen: charlas
+      },
+      {
+        id: 3,
+        titulo: 'Club de Libros',
+        descripcion: 'Un espacio para comentar libros, recomendar lecturas y descubrir nuevas historias.',
+        imagen: libros
+      },
+
+      // NUEVAS ACTIVIDADES
+
+      {
+        id: 4,
+        titulo: 'Lectura Infantil',
+        descripcion: 'Encuentros pensados para niños donde se narran cuentos y se promueve el amor por la lectura.',
+        imagen: libros
+      },
+      {
+        id: 5,
+        titulo: 'Intercambio de Libros',
+        descripcion: 'Traé un libro que ya hayas leído y llevate otro para descubrir nuevas historias.',
+        imagen: talleres
+      },
+      {
+        id: 6,
+        titulo: 'Café Literario',
+        descripcion: 'Reuniones informales para conversar sobre libros mientras compartimos un café entre vecinos.',
+        imagen: charlas
+      }
+    ]
+  };
+}
+
 };
 </script>
+
