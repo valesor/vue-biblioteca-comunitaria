@@ -193,9 +193,13 @@ h2 {
 }
 
 @media (max-width: 576px) {
-  #app {
-    padding: 0 0.5rem;
-  }
+#carouselBanner .carousel-caption
+ {
+   margin-top:2rem;
+    padding: 25px;
+    border-radius: 15px;
+}
+
   .container-libros {
     padding: 1rem 0rem;
   }
@@ -571,3 +575,4 @@ footer {
   background-color: #8b5e3c;
   color: white;
 }
+
