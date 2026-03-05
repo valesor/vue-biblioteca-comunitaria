@@ -1,0 +1,573 @@
+/* ----Fuente------- */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Lato&display=swap');
+
+/* ----Generales------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #fdf6e3;
+  color: #333;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  display: none;
+}
+/* ----Contenedor principal------- */
+.container {
+  max-width: 1080px;
+  margin: 40px auto;
+  padding: 0 15px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: calc(100% - 60px);
+    margin: 5px auto;
+  }
+}
+
+@media (min-width: 360px) {
+  .container {
+    width: calc(100% - 10px);
+    margin: 5px auto;
+  }
+
+  .py-5 {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  .navbar-brand {
+    font-size: 0.5rem;
+    color: #fff;
+  }
+}
+
+/* ----Header------ */
+header {
+  background-color: #8b5e3c;
+  padding: 5px 0;
+}
+
+.navbar-brand {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.nav-link {
+  color: white;
+  transition: color 0.3s;
+  font-size: 1.05rem;
+}
+
+.nav-link:hover {
+  color: #f2994a;
+}
+
+/* ----Banner------ */
+#carouselBanner .carousel-item img {
+  max-height: 650px;
+  object-fit: cover;
+  width: 100%;
+}
+
+#carouselBanner .carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 25px;
+  border-radius: 15px;
+}
+
+#carouselBanner .carousel-caption h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+#carouselBanner .carousel-caption p {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  #carouselBanner .carousel-item img {
+    max-height: 250px;
+  }
+
+  #carouselBanner .carousel-caption h2 {
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  #carouselBanner .carousel-caption p {
+    font-size: 1rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .btn-group-lg > .btn,
+  .btn-lg {
+    --bs-btn-font-size: 1rem;
+  }
+}
+/* ----Secciones general------ */
+h2 {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #2d6a4f;
+  font-size: 2rem;
+}
+
+/* ----Nosotros----- */
+#nosotros img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  #nosotros {
+    text-align: center;
+    margin-top: 0.5em;
+  }
+  #nosotros img {
+    margin-bottom: 20px;
+  }
+  #nosotros h2 {
+    font-size: 1.6rem;
+  }
+  #nosotros p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+/* ----FORMULARIO principal------ */
+#app {
+  display: flex;
+  flex-direction: column;
+  background-color: #fcfcfc;
+  width: 100%;
+
+  box-sizing: border-box;
+}
+
+.card {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 100%;
+  }
+  .titulo-nosotros {
+    margin-top: 1.5rem;
+    margin-bottom: 0.7rem;
+  }
+  footer {
+    padding: 0rem 1.5rem;
+  }
+}
+
+.container-libros {
+  background-color: #fdf6e3;
+  color: #333;
+  padding: 2rem 1rem;
+}
+
+@media (max-width: 576px) {
+  #app {
+    padding: 0 0.5rem;
+  }
+  .container-libros {
+    padding: 1rem 0rem;
+  }
+}
+
+.formulario-principal {
+  max-width: 950px !important; /* fuerza que tome este ancho */
+  margin: 0 auto; /* centrado horizontal */
+  width: 100% !important;
+  background: #ffffff !important;
+  padding: 50px 45px !important;
+  border-radius: 20px !important;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1) !important;
+}
+
+form:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  font-size: 1.15rem;
+  transition: all 0.3s ease;
+  font-family: 'Lato', sans-serif;
+}
+
+form input:focus,
+form select:focus {
+  border-color: #2d6a4f;
+  box-shadow: 0 0 8px rgba(45, 106, 79, 0.3);
+  outline: none;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+form input[type='checkbox'] {
+  width: auto;
+  margin-right: 10px;
+  accent-color: #2d6a4f;
+}
+
+form button[type='submit'] {
+  background: #f2994a;
+  color: #fff;
+  padding: 16px 40px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(242, 153, 74, 0.4);
+}
+
+form button[type='submit']:hover {
+  background: #6b4226;
+  box-shadow: 0 8px 25px rgba(242, 153, 74, 0.5);
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+
+form .texto-error {
+  font-size: 0.9rem;
+  color: #e74c3c;
+  margin-top: -15px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .formulario-principal {
+    padding: 15px 15px !important;
+  }
+  form button[type='submit'] {
+    font-size: 0.9rem;
+  }
+}
+
+/* ----Titulo secc libros------ */
+#libros h3 {
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: #2d6a4f;
+}
+
+/* ----Card libros------ */
+.container-libros {
+  background-color: #fdf6e3;
+  color: #333;
+  padding: 80px 15px;
+}
+
+.card {
+  border-radius: 15px;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  color: #2d6a4f;
+  font-size: 1.3rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* ----Cards libros agregados------ */
+.card-libro-agregado {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 2rem;
+}
+
+libro-card,
+libro-card > * {
+  display: contents;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.card {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.card-body .btn {
+  margin-top: auto;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .card-img-top {
+    height: 180px;
+  }
+  .card-title {
+    font-size: 1.15rem;
+  }
+  .card-text {
+    font-size: 0.95rem;
+  }
+  .filtros-container {
+    padding: 10px 12px;
+    margin: 0.8rem 0;
+  }
+}
+
+libro-card .card {
+  border-radius: 15px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+libro-card .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  libro-card {
+    flex: 1 1 90%;
+    max-width: none;
+  }
+
+  libro-card .card {
+    padding: 1.5rem;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+  }
+
+  .card-text {
+    font-size: 1.1rem;
+  }
+
+  .badge {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  libro-card {
+    flex: 1 1 95%;
+  }
+
+  .card-title {
+    font-size: 1.3rem;
+  }
+
+  .card-text {
+    font-size: 1rem;
+  }
+}
+
+/* ----Filtros libros------ */
+.filtros-container {
+  text-align: center;
+  margin: 30px auto 50px auto;
+  padding: 20px 35px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  max-width: 1800px;
+  transition: all 0.3s ease;
+}
+
+.filtros-container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+.filtros-container label {
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-right: 12px;
+  color: #2d6a4f;
+}
+
+.filtros-container select {
+  padding: 12px 28px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.filtros-container select:focus {
+  border-color: #2d6a4f;
+  box-shadow: 0 0 8px rgba(45, 106, 79, 0.3);
+  outline: none;
+}
+
+/* ----Botones generales------ */
+.boton-banner,
+.boton-contacto,
+.btn-estado {
+  background: #f2994a;
+  color: white;
+}
+
+.btn-primary {
+  background: #f2994a;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 25px;
+  font-size: 1.05rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #6b4226;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(242, 153, 74, 0.5);
+}
+
+.badge {
+  padding: 5px 10px;
+}
+
+.boton-contacto:hover,
+.btn-estado:hover {
+  background: #4e7c58;
+  color: white;
+  box-shadow: 0 5px 15px rgba(242, 153, 74, 0.5);
+}
+
+/* ----boton estado personalizado----- */
+.btn-estado {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+/* Estado disponible */
+.btn-estado.disponible {
+  background-color: #2d6a4f;
+  color: white;
+}
+
+.btn-estado.disponible:hover {
+  background-color: #40916c;
+  transform: scale(1.02);
+}
+
+/* Estado prestado */
+.btn-estado.prestado {
+  background-color: #d62828;
+  color: white;
+}
+
+.btn-estado.prestado:hover {
+  background-color: #e63946;
+  transform: scale(1.02);
+}
+
+/* ----fecha------ */
+.fecha-agregado {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #6c757d;
+  font-style: italic;
+}
+
+/* ----contacto------ */
+#contacto {
+  background-color: white;
+}
+
+/* Testimonios */
+.item-testimonio {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+}
+
+/* ----footer----- */
+footer {
+  background-color: #8b5e3c;
+  color: white;
+}
